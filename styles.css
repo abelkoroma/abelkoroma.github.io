@@ -1,0 +1,367 @@
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #96c6cc;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+body.dark-mode {
+    background-color: #121212;
+    color: #fff;
+}
+
+body.dark-mode a {
+    color: #1e90ff;
+}
+
+/* Positioning the badges */
+.badge-left {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 120px; /* Adjust size */
+    height: auto;
+}
+.badge-right {
+    position: absolute;
+    top: 60px;
+    right: 60px;
+    width: 120px; /* Adjust size */
+    height: auto;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(135deg, #35b90c, #1867ce);
+    color: #7ed8b2;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.search-bar {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+
+.search-bar input {
+    width: 80%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #333;
+}
+
+/* Section styles */
+section {
+    padding: 2rem 0;
+}
+
+h2 {
+    color: #d8c837;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.about p, .contact p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+/* General Playlist Styles */
+.songs ul {
+    list-style: none;
+    padding: 0;
+}
+
+.songs li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.songs li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Thumbnail Styling */
+.song-thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+
+/* Song Details Styling */
+.song-details {
+    flex: 1;
+}
+
+.song-details p {
+    font-weight: bold;
+    margin: 0 0 0.5rem;
+    color: #333;
+}
+
+.song-details audio {
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+}
+
+/* Playlist Headings */
+.songs h3 {
+    color: #1867ce;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.testimonials {
+    padding: 2rem 0;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.testimonials h2 {
+    color: #1867c0;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-item {
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-item p {
+    font-size: 1rem;
+    color: #666;
+    font-style: italic;
+}
+
+.testimonial-item strong {
+    display: block;
+    margin-top:
+     0.5rem;
+    color: #333;
+}
+/* Comment Section */
+.comments {
+    padding: 2rem 0;
+    background: #f9f9f9;
+}
+
+.comments h2 {
+    text-align: center;
+    color: #1867c0;
+    margin-bottom: 1.5rem;
+}
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#commentForm input, #commentForm textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#commentForm button {
+    padding: 0.5rem 1rem;
+    background: #1867c0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#commentForm button:hover {
+    background: #0f4a8a;
+}
+
+#commentList {
+    margin-top: 2rem;
+    max-width: 600px;
+    margin: 2rem auto 0;
+}
+
+#commentList h3 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.comment-item {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-item strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #1867c0;
+}
+/*
+/* Footer styles */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.gallery {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    color: #1867ce;
+    margin-bottom: 1.5rem;
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.photo-grid img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photo-grid img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* Books Section */
+.books {
+    padding: 2rem 0;
+    background: #f9f9f9;
+}
+
+.books h2 {
+    text-align: center;
+    color: #1867c0;
+    margin-bottom: 2rem;
+}
+
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.book-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 300px;
+}
+
+.book-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.book-item h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.book-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #1867c0;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.download-btn:hover {
+    background: #0f4a8a;
+}
